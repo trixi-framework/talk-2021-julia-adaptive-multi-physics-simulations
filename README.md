@@ -3,14 +3,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://opensource.org/licenses/MIT)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/main?filepath=getting_started_with_julia_and_trixi.ipynb)
 
-This is the companion repository for the talk ([see abstract below](#abstract))
+This is the companion repository for the talk
 
 **Julia for adaptive high-order simulations**  
 *Michael Schlottke-Lakemper*  
 Numerical Analysis Seminar, Lund University  
 27th January 2021, 3:15pm CET
 
-Here you can find the Jupyter notebook
+(see abstract [below](#abstract)). Here you can find the Jupyter notebook
 [getting_started_with_julia_and_trixi.ipynb](getting_started_with_julia_and_trixi.ipynb)
 that will be used during the talk for a live demonstration of Julia and
 [Trixi.jl](https://github.com/trixi-framework/Trixi.jl). There are also some additional
@@ -26,7 +26,8 @@ The easiest way to get started is to click on the *Binder* badge above (or
 [here](https://mybinder.org/v2/gh/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/main?filepath=getting_started_with_julia_and_trixi.ipynb)),
 which launches a Jupyter instance in the cloud and loads the notebook
 directly from this repository. This approach has the advantage that you do not
-need to install anything locally to try out the examples.
+need to install anything locally to try out the examples, and you can skip the
+rest of this *Getting started* section.
 
 ### Setting up a local Julia/Jupyter installation
 Alternatively, you can also clone this repository and open the notebook on your
@@ -40,7 +41,7 @@ Then, follow the
 [platform-specific instructions](https://julialang.org/downloads/platform/)
 to install Julia on your machine.
 
-Verify your installation by opening a terminal and starting the Julia *REPL*
+After the installation, open a terminal and start the Julia *REPL*
 (i.e., the interactive prompt) with
 ```shell
 julia
@@ -55,7 +56,7 @@ Pkg.add("IJulia")
 to install IJulia.
 
 #### Installing the required Julia packages
-To make this notebook fully reproducible, we have used Julia's package manager
+To make the notebook fully reproducible, we have used Julia's package manager
 to pin all packages to a fixed release. This ensures that you always have a
 Julia environment in which all examples in this notebook work. Later you can
 always install the latest versions of Trixi and its dependencies by following
@@ -75,7 +76,7 @@ This will download and build all required packages, including the ODE package
 [OrdinaryDiffEq](https://github.com/SciML/OrdinaryDiffEq.jl), the visualization
 package [Plots](https://github.com/JuliaPlots/Plots.jl), and of course
 [Trixi](https://github.com/trixi-framework/Trixi.jl).
-he `--project=.` argument tells Julia to use the `Project.toml`
+The `--project=.` argument tells Julia to use the `Project.toml`
 and `Manifest.toml` files from this repository to figure out which packages to install.
 
 #### Running the notebook
@@ -95,15 +96,15 @@ please refer to the [IJulia documentation](https://julialang.github.io/IJulia.jl
 As an alternative to running the examples in the notebook directly, you may
 also just view the notebook *statically* by clicking on it in GitHub 
 [getting_started_with_julia_and_trixi.ipynb](getting_started_with_julia_and_trixi.ipynb)
-or by using the
-[Jupyter NBViewer service](https://nbviewer.jupyter.org/github/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/blob/main/getting_started_with_julia_and_trixi.ipynb).
-Then, you can execute the individual code snippets in the REPL by navigating to
-the repository folder and start Julia with the REPL with
+or by using
+[Jupyter NBViewer](https://nbviewer.jupyter.org/github/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/blob/main/getting_started_with_julia_and_trixi.ipynb).
+Then, you can copy the individual code snippets and execute them in the REPL by navigating to
+the repository folder and starting Julia with
 ```shell
 julia --project=.
 ```
 
-*Note:* Make sure that you execute the examples (either in the notebook or in the
+*General note:* Make sure that you execute the examples (either in the notebook or in the
 REPL) *in order*, at least for the first time. Both the notebook and the
 Julia REPL maintain an internal state and and some snippets depend on
 earlier statements having been executed.
@@ -138,7 +139,7 @@ in action.
 
 To make the shown examples reproducible by the audience, the Jupyter notebook
 used for the live demonstration is available in this repository
-(see [above](https://github.com/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations)).
+(see [above](#getting-started)).
 It can be either run from a local Julia/Jupyter installation or in the cloud via
 Binder (without having to install Julia locally).
 
