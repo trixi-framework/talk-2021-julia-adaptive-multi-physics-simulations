@@ -29,6 +29,14 @@ directly from this repository. This approach has the advantage that you do not
 need to install anything locally to try out the examples, and you can skip the
 rest of this *Getting started* section.
 
+*Note:* [mybinder.org](https://mybinder.org) is a free service. Depending on
+current usage and available resources, it typically takes 1-2 minutes to launch a
+notebook (sometimes a little longer), so try to remain patient. Similarly, the
+first two cells of the notebook take much longer to execute than usual (around
+1.5 minutes for the first Trixi simulation and about 1 minute for the first
+plot), since Julia compiles all methods "just-ahead-of-time" at first use.
+Subsequent runs will be much faster.
+
 ### Setting up a local Julia/Jupyter installation
 Alternatively, you can also clone this repository and open the notebook on your
 local machine. This is recommended if you already have a Julia + Jupyter setup
