@@ -94,10 +94,8 @@ For more details, especially on how to use an existing Jupyter installation,
 please refer to the [IJulia documentation](https://julialang.github.io/IJulia.jl/stable/).
 
 As an alternative to running the examples in the notebook directly, you may
-also just view the notebook *statically* by clicking on it in GitHub 
-[getting_started_with_julia_and_trixi.ipynb](getting_started_with_julia_and_trixi.ipynb)
-or by using
-[Jupyter NBViewer](https://nbviewer.jupyter.org/github/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/blob/main/getting_started_with_julia_and_trixi.ipynb).
+also just view the notebook *statically* by opening it within
+[Jupyter NBViewer](https://nbviewer.jupyter.org/github/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/blob/main/getting_started_with_julia_and_trixi.ipynb?flush_cache=true).
 Then, you can copy the individual code snippets and execute them in the REPL by navigating to
 the repository folder and starting Julia with
 ```shell
