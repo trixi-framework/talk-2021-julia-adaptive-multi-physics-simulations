@@ -17,12 +17,14 @@ mesh_static = TreeMesh(coordinates_min, coordinates_max,
                        n_cells_max=30_000)
 
 # Create semidiscretization with all spatial discretization-related components
-semi = SemidiscretizationHyperbolic(mesh, equations,
+semi = SemidiscretizationHyperbolic(mesh_static, equations,
                                     initial_condition_convergence_test,
                                     solver)
 
 # Create ODE problem from semidiscretization with time span from 0.0 to 1.0
-ode = semidiscretize(semi, (0.0, 1.0));
+ode = semidiscretize(semi, (0.0, 1.0))
 
 # Evolve ODE problem in time using OrdinaryDiffEq's `solve` method
 sol = solve(ode, CarpenterKennedy2N54(williamson_condition=false), dt=2.5e-2);
+
+nothing # To suppress output when include'ing this file in the REPL (otherwise `sol` is printed)

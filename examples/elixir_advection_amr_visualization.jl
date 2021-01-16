@@ -1,6 +1,7 @@
 # Load necessary packages
 using OrdinaryDiffEq
 using Trixi
+using Plots
 
 
 ###############################################################################
@@ -70,3 +71,5 @@ callback_set = CallbackSet(visualization_callback, amr_callback)
 # Create and solve ODE problem, using the previously constructed callback set
 sol = solve(ode, CarpenterKennedy2N54(williamson_condition=false),
             callback=callback_set, dt=6.25e-3);
+
+nothing
