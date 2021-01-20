@@ -10,7 +10,7 @@ This is the companion repository for the talk
 Numerical Analysis Seminar, Lund University  
 27th January 2021, 3:15pm CET
 
-(see abstract [below](#abstract)). Here you can find the Jupyter notebook
+(see abstract [below](#abstract)). Here you can find the [Jupyter](https://jupyter.org) notebook
 [getting_started_with_julia_and_trixi.ipynb](getting_started_with_julia_and_trixi.ipynb)
 that will be used during the talk for a live demonstration of Julia and
 [Trixi.jl](https://github.com/trixi-framework/Trixi.jl). There are also some additional
@@ -23,19 +23,22 @@ final version of the notebook to be uploaded at least one day before.**
 
 ### Using mybinder.org
 The easiest way to get started is to click on the *Launch Binder* badge above (or
-[here](https://mybinder.org/v2/gh/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/main?filepath=getting_started_with_julia_and_trixi.ipynb)),
-which launches a Jupyter instance in the cloud and loads the notebook
-directly from this repository. This approach has the advantage that you do not
-need to install anything locally to try out the examples, and you can skip the
-rest of this *Getting started* section.
+[here](https://mybinder.org/v2/gh/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/main?filepath=getting_started_with_julia_and_trixi.ipynb)).
+This launches the notebook for interactive use in your browser without the need
+to download or install anything locally.
 
-*Note:* [mybinder.org](https://mybinder.org) is a free service. Depending on
-current usage and available resources, it typically takes 1-2 minutes to launch a
-notebook (sometimes a little longer), so try to remain patient. Similarly, the
-first two cells of the notebook take much longer to execute than usual (around
-1.5 minutes for the first Trixi simulation and about 1 minute for the first
-plot), since Julia compiles all methods "just-ahead-of-time" at first use.
-Subsequent runs will be much faster.
+In this case, you can skip the rest of this *Getting started* section. A
+Jupyter instance will be started automagically in the cloud via
+[mybinder.org](https://mybinder.org), and the notebook will loaded directly from
+this repository.
+
+*Note:*  Depending on current usage and available resources,
+it typically takes 1-2 minutes to launch a notebook with
+[mybinder.org](https://mybinder.org) (sometimes a little longer), so try to
+remain patient. Similarly, the first two cells of the notebook take much longer
+to execute than usual (around 1.5 minutes for the first Trixi simulation and
+about 1 minute for the first plot), since Julia compiles all methods
+"just-ahead-of-time" at first use.  Subsequent runs will be much faster.
 
 ### Setting up a local Julia/Jupyter installation
 Alternatively, you can also clone this repository and open the notebook on your
@@ -44,10 +47,11 @@ or if you plan to try out Julia anyways.
 
 #### Installing Julia and IJulia
 To obtain Julia, go to https://julialang.org/downloads/ and download the latest
-stable release (v1.5.3 as of 2021-01-14; neither use the LTS release nor Julia Pro!).
+stable release (v1.5.3 as of 2021-01-14; neither use the LTS release nor Julia Pro).
 Then, follow the
 [platform-specific instructions](https://julialang.org/downloads/platform/)
-to install Julia on your machine.
+to install Julia on your machine. Note that there is no need to compile anything if you are using
+Linux, MacOS, or Windows.
 
 After the installation, open a terminal and start the Julia *REPL*
 (i.e., the interactive prompt) with
@@ -56,7 +60,7 @@ julia
 ```
 To use the notebook, you also need to get the
 [IJulia](https://github.com/JuliaLang/IJulia.jl) package, which provides a Julia
-backend for [Jupyter](https://jupyter.org). In the REPL, execute
+backend for Jupyter. In the REPL, execute
 ```julia
 using Pkg
 Pkg.add("IJulia")
