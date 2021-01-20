@@ -22,7 +22,7 @@ final version of the notebook to be uploaded at least one day before.**
 ## Getting started
 
 ### Using mybinder.org
-The easiest way to get started is to click on the *Binder* badge above (or
+The easiest way to get started is to click on the *Launch Binder* badge above (or
 [here](https://mybinder.org/v2/gh/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/main?filepath=getting_started_with_julia_and_trixi.ipynb)),
 which launches a Jupyter instance in the cloud and loads the notebook
 directly from this repository. This approach has the advantage that you do not
