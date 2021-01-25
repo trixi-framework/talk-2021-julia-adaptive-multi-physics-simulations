@@ -16,8 +16,7 @@ that will be used during the talk for a live demonstration of Julia and
 [Trixi.jl](https://github.com/trixi-framework/Trixi.jl). There are also some additional
 Trixi elixirs (simulation setups) in the [examples](examples/) directory.
 
-**NOTE: This repository will be updated several times prior to the talk, with the
-final version of the notebook to be uploaded at least one day before.**
+*NOTE: The final version of the notebook has been uploaded.*
 
 ## Getting started
 
