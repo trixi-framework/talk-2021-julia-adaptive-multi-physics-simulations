@@ -1,22 +1,26 @@
-# Julia for adaptive high-order simulations
+# Julia for adaptive high-order multi-physics simulations
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://opensource.org/licenses/MIT)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/trixi-framework/talk-2021-julia-adaptive-multi-physics-simulations/main?filepath=getting_started_with_julia_and_trixi.ipynb)
 
 This is the companion repository for the talk
 
-**Julia for adaptive high-order simulations**  
+**Julia for adaptive high-order multi-physics simulations**  
 *Michael Schlottke-Lakemper*  
 Numerical Analysis Seminar, Lund University  
 27th January 2021, 3:15pm CET
 
-(see abstract [below](#abstract)). Here you can find the [Jupyter](https://jupyter.org) notebook
-[getting_started_with_julia_and_trixi.ipynb](getting_started_with_julia_and_trixi.ipynb)
-that will be used during the talk for a live demonstration of Julia and
-[Trixi.jl](https://github.com/trixi-framework/Trixi.jl). There are also some additional
+(see abstract [below](#abstract)). Here you can find the presentation slides
+[talk-julia-adaptive-multi-physics-simulations-20200127.pdf](talk-julia-adaptive-multi-physics-simulations-20200127.pdf)
+as well as the
+the [Jupyter](https://jupyter.org) notebook
+[getting_started_with_julia_and_trixi.ipynb](getting_started_with_julia_and_trixi.ipynb),
+which was used during the talk for a live demonstration of Julia and
+[Trixi.jl](https://github.com/trixi-framework/Trixi.jl).
+Note that to play the video linked in the presentation, you also need to download the [media/](media/)
+directory and place it in the same folder as the PDF.
+There are also some additional
 Trixi elixirs (simulation setups) in the [examples](examples/) directory.
-
-*NOTE: The final version of the notebook has been uploaded.*
 
 ## Getting started
 
